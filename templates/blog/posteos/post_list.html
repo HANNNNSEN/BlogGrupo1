@@ -1,0 +1,10 @@
+{% extends "blog/base.html" %}
+{%block content%}
+    <ul>
+        {%for post in posteos %}
+            <a href="{% url 'post_view' post.pk %}">{{post.titulo}} <a/>
+
+                
+        {% endfor %}
+    </ul>
+{%endblock %}

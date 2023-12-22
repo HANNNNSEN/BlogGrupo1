@@ -1,0 +1,10 @@
+{% extends "blog/base.html" %}
+{%block content%}
+    <ul>
+        {%for categoria in categorias %}
+            <a href="{% url 'categoria_view' categoria.pk %}">{{categoria.nombre}} <a/>
+
+                
+        {% endfor %}
+    </ul>
+{%endblock %}

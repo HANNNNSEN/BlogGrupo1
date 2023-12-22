@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+{%block content%}
+    <h2>{{post.titulo}}</h2>
+    <ul>
+        <li>Subtitulo: {{post.subtitulo}}</li>
+        <li>fecha_creado: {{post.echa_creado}}</li>
+        <li>fecha_modificado: {{post.fecha_modificado}}</li>
+        <li>contenido: {{post.contenido}}</li>
+        <li>categoria: {{post.categoria}}</li>
+        <li>imagen: <img src="{{post.imagen.url}}" alt="{{post.categoria}}" width="200"></li>
+        <li>vistas: {{post.vistas}}</li>
+        <li>destacado: {{post.destacado}}</li>
+
+
+{%endblock %}
